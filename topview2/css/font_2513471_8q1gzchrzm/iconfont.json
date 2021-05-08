@@ -1,0 +1,79 @@
+{
+  "id": "2513471",
+  "name": "2222",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "18939005",
+      "name": "听歌识曲",
+      "font_class": "tinggeshiqu",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "20734268",
+      "name": "changyuyinhecheng",
+      "font_class": "changyuyinhecheng",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "21009976",
+      "name": "down",
+      "font_class": "down",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "21009982",
+      "name": "right",
+      "font_class": "right",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "3082979",
+      "name": "网易云",
+      "font_class": "wangyiyun",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "5643536",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "10490678",
+      "name": "网易云",
+      "font_class": "wangyiyun1",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "11104153",
+      "name": "分 享",
+      "font_class": "fenxiang",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "15838431",
+      "name": "arrow-right",
+      "font_class": "arrow-right",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "21269534",
+      "name": "arrow-right",
+      "font_class": "arrow-right-copy",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    }
+  ]
+}

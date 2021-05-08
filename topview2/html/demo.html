@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    ul,li{
+        list-style: none;
+    }
+#box{
+    width: 92%;
+    height: 250px;
+    margin:30px auto;
+    /* perspective: 500px; */
+}
+#box ul{
+    position: relative;
+    /* transform-style:preserve-3d ; */
+    height: 100%;
+    /* transform-origin: 0, 0 1; */
+    /* transform: rotateY(33deg); */
+    transform-style:preserve-3d ;
+    perspective: 800px;
+
+}
+#box ul li{
+    position: absolute;
+    width: 40%;
+    height: 250px;
+    border-radius: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #faf;
+    transition: all 1s ease;
+}
+#box ul li:nth-child(1){
+    background-color: rgb(19, 165, 14);
+    left: 50%;
+   /* transform: translate3d(-50%, 0 ,50px) rotateY(-33deg); */
+}
+#box ul li:nth-child(2){
+    background-color: rgb(134, 60, 82);
+    /* left:0; */
+    /* transform: translate3d(0, 0, -10px) rotateY(-33deg); */
+}
+#box ul li:nth-child(3){
+    background-color: rgb(14, 110, 165);
+    /* right: 0; */
+    /* transform: translate3d(0, 0, -10px) rotateY(-33deg); */
+}
+/* #box ul li:nth-child(4){
+    background-color: rgb(165, 14, 157);
+    left: 43px;
+}
+#box ul li:nth-child(5){
+    background-color: rgb(165, 74, 14);
+    left: 13px;
+}
+#box ul li:nth-child(6){
+    background-color: rgb(142, 165, 14);
+    left: 3px;
+} */
+#box ul .bef{
+    transform: translateX(-50%) translateZ(100px);
+    /* z-index: 2;scale(1.25)  */
+}
+
+#box ul .left{
+    transform: translateX(-100%);
+}
+#box ul .right{
+    transform: scale(1);
+}
+</style>
+<body>
+    <div>
+        <div id="box">
+            <ul>
+                <li>be</li>
+                <li>le</li>
+                <li>ri</li>
+            </ul>
+        </div>
+    </div>
+    <button>点击1</button>
+    <button>点击2</button>
+    <script>
+    window.onload = function(){
+        var lis = document.querySelectorAll('ul li');
+        var btn = document.querySelectorAll('button');
+        btn[0].onclick =function(){
+            lis[0].className = 'bef';
+            lis[1].className = 'left';
+            lis[2].className = 'right';
+        }
+       
+        btn[1].onclick =function(){
+            lis[0].className = 'left';
+            lis[1].className = 'right';
+            lis[2].className = 'bef';
+        }
+        
+    }
+    </script>
+</body>
+</html>

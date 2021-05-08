@@ -1,0 +1,194 @@
+#logoPage{
+    box-sizing: border-box;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    padding: 35px 25px 10px;
+    width: 348px;
+    /* height: 518px; */
+    border: 1px #ccc solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+    display: none;
+}
+/* #logoPage div:first-child */
+#logoPage #close{
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    cursor: pointer;
+}
+#logoPage div:first-of-type img{
+    /* draggable: false; */
+    -webkit-user-drag: none;
+    width: 100%;
+}
+#logoPage table{
+    position: relative;
+    margin: 22px auto 10px;
+    width: 260px;
+    height: 65px;
+    border-collapse: collapse;
+    border-color: #ccc;
+    /* border-radius: 10px; */
+}
+#logoPage table span{
+    position: absolute;
+    left: 2px; 
+}
+#logoPage table .icon-icon_user{
+    top: 7px;
+}
+#logoPage table  .icon-icon_lock{
+    top: 39px;
+}
+#logoPage table input{
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 100%;
+    height: 95%;
+    /* font-size: px; */
+    border: 0px;
+    outline: none;
+}
+#logoPage #fzi{
+    position: absolute;
+    top: 286px;
+    left: 43px; 
+    width: 200px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+#fzi::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 1px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 15px;
+    font-size: 14px;
+}
+#zidong:checked +#fzi::before{
+    content: '\2714';
+    color: rgb(212, 44, 44);
+}
+#zidong{
+    visibility: hidden;
+}
+
+#logoPage #login{
+    display: block;
+    width: 250px;
+    height: 40px;
+    margin: 10px auto;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    background-color: rgb(238, 41, 41);
+}
+#logoPage #login:hover{
+    background-color: rgb(212, 44, 44);
+}
+#logoPage p{
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+
+} 
+
+/* 其他登录方式 */
+#otherWays{
+    display: flex;
+    margin: 25px auto;
+    width: 250px;
+    height: 50px;
+    justify-content: space-between;
+}
+#otherWays li{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px #ccc solid;
+}
+#otherWays li a{
+    display: block;
+    font-size: 28px;
+    line-height: 48px;
+    text-align: center;
+}
+#otherWays li:nth-child(1) a{
+    color: #1296db;
+    /* font-size: ; */
+}
+#otherWays li:nth-child(2) a{
+    color: #1ce02a;
+    font-size: 32px ;
+}
+#otherWays li:nth-child(3) a{
+    color: #d81e06;
+    font-size: 32px ;
+}
+#otherWays li:nth-child(4) a{
+    color: #d81e06;
+    font-size: 28px;
+}
+/* 协议 */
+
+#logoPage #fagree{
+    position: absolute;
+    bottom: -4px;
+    left: 18px; 
+    /* width: 20px; */
+    height: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: 20px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+#fagree::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 1px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 12px;
+    font-size: 12px;
+}
+#agree:checked+ #fagree::before{
+    content: '\2714';
+    color: rgb(212, 44, 44);
+}
+/* #zidong:checked +#fzi::before{
+    content: '\2714';
+    color: rgb(212, 44, 44);
+} */
+#logoPage div:last-of-type{
+    /* visibility: hidden; */
+    position: relative;
+    margin: 30px auto;
+    font-size: 12px;
+    text-align: right;
+}
+#agree{
+    visibility: hidden;
+}
+#logoPage div:last-of-type a{
+    color: #1296db;
+    float: right;
+}
